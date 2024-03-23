@@ -162,7 +162,7 @@ module {
                     let params: IC.CreateCanisterParams = {
                         settings = ?settings
                     };
-                    Cycles.add(creationCycles);
+                    Cycles.add<system>(creationCycles);
 
                     // Ask the IC to create a canister.
                     var canister : ?Principal = null;
